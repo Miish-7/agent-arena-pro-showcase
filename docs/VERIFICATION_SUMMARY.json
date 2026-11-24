@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-24",
+  "scope": "Merged private application dashboard revision; GitHub Actions after merge",
+  "jobs": {
+    "Python 3.12": {
+      "passed": 720,
+      "skipped_postgresql_only": 33,
+      "warnings": 1
+    },
+    "Python 3.13": {
+      "passed": 720,
+      "skipped_postgresql_only": 33,
+      "warnings": 1
+    },
+    "PostgreSQL 17.12": {
+      "passed": 33,
+      "failed": 0,
+      "skipped": 0
+    },
+    "Node dashboard": {
+      "passed": 11,
+      "failed": 0
+    },
+    "offline_benchmark": {
+      "scenarios": 9,
+      "provider_calls": 0,
+      "lexical_indicator": {
+        "TP": 5,
+        "FP": 1,
+        "FN": 0,
+        "TN": 3
+      }
+    }
+  },
+  "limits": "Repeated interpreter coverage is not additive. Hosted source logs are private. This is a redacted result summary, not a signed attestation or production certification."
+}
