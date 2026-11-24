@@ -1,0 +1,84 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "version": 3,
+  "metadata": {
+    "component": {
+      "type": "application",
+      "name": "AGENT//ARENA public presentation",
+      "version": "showcase-review-2026-11-24.3"
+    },
+    "properties": [
+      {
+        "name": "arena:inventory-scope",
+        "value": "Project-authored browser code, styles and WebGL fallback. SHA256SUMS covers the complete distributed file set including media."
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "file",
+      "name": "assets/site.js",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "30d7621acd993927f317695ca70cf7b0fd84b0745f5b742f5b94349b9554d880"
+        }
+      ],
+      "properties": [
+        {
+          "name": "arena:origin",
+          "value": "project-authored; no third-party browser package"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/site.css",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "1e461b4f67e22fa134566fad782c042ad40c5c4dab64700070e1f6e3d5d96728"
+        }
+      ],
+      "properties": [
+        {
+          "name": "arena:origin",
+          "value": "project-authored; no third-party browser package"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/glass-scene.js",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b49b71c058c9593d7b76bf71057e8287753b35636ff8445b2f47b665df79e25d"
+        }
+      ],
+      "properties": [
+        {
+          "name": "arena:origin",
+          "value": "project-authored; no third-party browser package"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/glass-fallback.svg",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d0efcc93680d4c22cdf50e0ce1c272cb386661473fe62447a727f2220b893685"
+        }
+      ],
+      "properties": [
+        {
+          "name": "arena:origin",
+          "value": "project-authored; no third-party browser package"
+        }
+      ]
+    }
+  ]
+}

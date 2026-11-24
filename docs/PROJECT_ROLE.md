@@ -1,5 +1,11 @@
 # Project role and engineering decisions | المساهمة والقرارات الهندسية
 
+Developed by Meshal Almasoudi & Fahad Mubarak
+
+<p dir="rtl" lang="ar">تم تطوير المشروع بواسطة <bdi dir="ltr" lang="en">Meshal Almasoudi &amp; Fahad Mubarak</bdi></p>
+
+Individual engineering tasks have not been attributed to either named developer. The roles below reflect the owner-confirmed project process.
+
 | Contributor | Contribution |
 |---|---|
 | Project owner | Defined the goals, coordinated development and participated in testing and approval decisions. For the live trial, the owner checked that the issue was public and synthetic, and authorized one read and one Groq summary. |

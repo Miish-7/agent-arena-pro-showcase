@@ -1,14 +1,14 @@
 {
   "date": "2026-11-24",
-  "scope": "Merged private application dashboard revision; GitHub Actions after merge",
+  "scope": "Final merged private application revision; GitHub Actions after merge",
   "jobs": {
     "Python 3.12": {
-      "passed": 720,
+      "passed": 728,
       "skipped_postgresql_only": 33,
       "warnings": 1
     },
     "Python 3.13": {
-      "passed": 720,
+      "passed": 728,
       "skipped_postgresql_only": 33,
       "warnings": 1
     },
@@ -16,10 +16,6 @@
       "passed": 33,
       "failed": 0,
       "skipped": 0
-    },
-    "Node dashboard": {
-      "passed": 11,
-      "failed": 0
     },
     "offline_benchmark": {
       "scenarios": 9,
@@ -29,8 +25,20 @@
         "FP": 1,
         "FN": 0,
         "TN": 3
-      }
+      },
+      "unauthorized_synthetic_writes": 0
+    },
+    "Node dashboard and API documentation": {
+      "passed": 13,
+      "failed": 0
     }
   },
-  "limits": "Repeated interpreter coverage is not additive. Hosted source logs are private. This is a redacted result summary, not a signed attestation or production certification."
+  "limits": "Repeated interpreter coverage is not additive. Hosted source logs are private. This is a redacted result summary, not a signed attestation or production certification. Nine curated fixtures do not establish broad attack resistance. A ReDoc build-dependency advisory remains under observation; production deployment is not approved.",
+  "distinct_python_cases": 761,
+  "counting_method": "728 shared non-PostgreSQL cases on each interpreter, plus 33 non-overlapping PostgreSQL cases in the dedicated job.",
+  "completed_at_utc": "2026-11-24T15:28:12Z",
+  "hosted_jobs": {
+    "passed": 3,
+    "failed": 0
+  }
 }

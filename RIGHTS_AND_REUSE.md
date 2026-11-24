@@ -1,11 +1,13 @@
-# Material, attribution and reuse | حقوق مواد العرض
+# Credits and reuse | الحقوق والنسب
 
-The project owner presents an experimental AI agent security testbed. The gate symbol with two forward strokes and the conceptual circuit-board illustration were drawn specifically for this showcase. ChatGPT and Codex assisted the project as described in the [contribution statement](docs/PROJECT_ROLE.md).
+Developed by Meshal Almasoudi & Fahad Mubarak
 
-The redesigned interface images are crops of supplied local synthetic fixture captures. The screenshots from the earlier approval sequence retain their original framing. The social cover uses the cropped overview. These materials document the interface at the time of capture. [See the captures](docs/DEMO.md).
+<p dir="rtl" lang="ar">تم تطوير المشروع بواسطة <bdi dir="ltr" lang="en">Meshal Almasoudi &amp; Fahad Mubarak</bdi></p>
 
-GitHub, Groq, ChatGPT and Codex are named to identify the services used. No endorsement is claimed. The owner has selected no open-source license for the private application. Contact the owner for permission before redistributing these materials.
+The owner confirms ownership of the approved gate mark. The glass sculpture in the showcase is original programmatic geometry. It illustrates the policy boundary. No part of the supplied design-reference image is embedded in the page. The scene uses native WebGL, original shaders and local JavaScript. The SVG fallback and outline interface icons are project graphics. Typography uses fonts already available on the visitor’s device. This presentation distributes no third-party font or JavaScript runtime.
 
-## بالعربية
+The three dashboard crops and three historical approval images are real captures with synthetic data. The continuous film shows an actual disposable fixture session. The English and Arabic sharing covers use the original WebGL sculpture rendered from the presentation. The team cards use typographic initials. Review [capture provenance](docs/DEMO.md) and [engineering credits](docs/PROJECT_ROLE.md).
 
-يعرض صاحب المشروع مختبرًا تجريبيًا لأمن وكلاء الذكاء الاصطناعي. رُسم رمز البوابة ذي الخطّين المائلين والرسم المفاهيمي للدوائر خصيصًا لهذا العرض. اللقطات الثلاث للتصميم الجديد مقتصّة من صور محلية فعلية ببيانات اصطناعية، وحافظت لقطات الموافقة الأقدم على إطارها الأصلي. يستخدم الغلاف مقتطفًا من لوحة التحكم. يُرجى الرجوع إلى صاحب المشروع قبل إعادة توزيع المواد. لم يختر المالك رخصة مفتوحة للتطبيق الخاص. [المساهمات](docs/PROJECT_ROLE.md) · [اللقطات](docs/DEMO.md)
+Review permission is distinct from a license to redistribute. The owner has not selected an open-source license for the private application. Product and service names identify the technologies used and imply no endorsement.
+
+أكد صاحب المشروع ملكية الشعار المعتمد. تولّد الشيفرة المجسّم والشبكة العصبية مباشرة داخل المتصفح، وتوثّق اللقطات والتسجيل تجربة فعلية ببيانات اصطناعية. تظهر جهة التطوير في الصفحة الرئيسية وقسم الفريق والتذييل. يعود قرار ترخيص إعادة الاستخدام إلى المالك.

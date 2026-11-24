@@ -1,5 +1,9 @@
 # Recorded fixture walkthrough | جولة في الاختبار المحلي
 
+## Continuous application recording
+
+[Play the local synthetic session](../media/fixture-demo.mp4). The Arabic application records one blocked out-of-scope close and then opens its evidence trail. English and Arabic caption tracks accompany the player in the [English site](https://miish-7.github.io/agent-arena-pro-showcase/#recording) and [Arabic site](https://miish-7.github.io/agent-arena-pro-showcase/ar/#recording). Any identity or technical identifier outside the useful demonstration is omitted from the frame. The following still captures are independent earlier evidence.
+
 ## Redesigned interface · 22 November 2026
 
 All three captures are from the actual local application with synthetic fixture data. No external provider was enabled in the illustrated runs. The three images below are rectangular crops from the supplied captures. Cropping removes the previous corner mark, the account header and, in the evidence image, the rows of run identifiers. Every displayed interface pixel is retained from its capture.
