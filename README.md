@@ -1,54 +1,47 @@
-# AGENT//ARENA
+# <img src="assets/gate/favicon-32.png" alt="" width="32" height="32"> AGENT//ARENA
 
-**AI Agent Security & Governance Platform**  
-AI proposes. Policy decides.
+**AI Agent Security & Governance Platform** · [العربية](README_AR.md)
 
-A support agent can read a ticket. Who can authorize closing it? AGENT//ARENA checks the authenticated caller, the organization’s policy and the tool grant before an action takes effect. The project runs in an isolated enterprise test environment with synthetic records.
-[Watch the English product film](evidence/index.html#launch-film) · [الفيلم بالعربية](ar/evidence/index.html#launch-film)
+A support agent can read a ticket. Should it be able to close it? AGENT//ARENA puts an independent policy gateway in front of the tool that changes the record. A security team can trace who requested the change, which policy applied, who approved it and what happened to the ticket.
 
+[Open the showcase](https://miish-7.github.io/agent-arena-pro-showcase/) · [Watch the 75-second film](https://miish-7.github.io/agent-arena-pro-showcase/media/launch/MAIN_PRODUCT_FILM_EN.mp4) · [Try the decision lab](https://miish-7.github.io/agent-arena-pro-showcase/lab/) · [Inspect the evidence](https://miish-7.github.io/agent-arena-pro-showcase/evidence/)
 
-[العربية](README_AR.md) · [Watch the console recording](media/enterprise-console.mp4) · [Inspect the two-organization case](docs/LOCAL_PILOT.md)
+**1,004 distinct Python cases passed · 24 Node tests passed** on the frozen engineering release, `686f29d`. The hosted results and open security gates are [documented together](docs/EVIDENCE_AND_LIMITS.md).
 
-![AGENT//ARENA sharing cover for the AI agent security and governance platform.](assets/social-cover.png)
+## What happened when Qwen asked to close a ticket?
 
-## Follow one decision
+We ran **Qwen2.5-0.5B-Instruct on a local CPU**, with the same six requests in English and Arabic. In both languages, an authorized read reached a separate ticket service. When the model proposed closing the ticket under a read-only identity, the gateway denied the write. The ticket stayed **open at revision 0**.
 
-In the two-organization exercise, an authorized read reached a separate local ticket service over TLS. A proposed change without the right grant left the ticket revision untouched. A sensitive close waited for a different reviewer and executed once. Reusing the approval returned HTTP 409. The other organization received HTTP 404 when it requested the protected record. A restored copy of the audit history passed its local integrity check. [Case and diagram](docs/LOCAL_PILOT.md) · [Redacted result record](docs/ENTERPRISE_RESULTS.json)
+[![The AGENT//ARENA gateway. Control AI agent actions before they execute.](assets/social-cover.png)](https://miish-7.github.io/agent-arena-pro-showcase/)
 
-![Actual English security console in the local presentation revision with synthetic records.](assets/enterprise-overview-en.png)
+With a grant to request closure, the same kind of proposal waited for a separate reviewer. Test automation signed in as that reviewer. After confirmation the ticket closed **once, at revision 1**. A second confirmation returned HTTP 409.
 
-## What was measured
+Two local runs at revision `32aab5c` produced 24 model outputs on this fixed set. We recorded abstentions separately from policy denials. The film shows a separate deterministic exercise on synthetic data. [Read the bilingual Qwen evaluation](docs/ENGINEERING_REVIEW.md#follow-up-with-a-structured-target) · [Inspect the recorded fixture](docs/CASE_STUDY.md)
 
-| Evidence | Result and scope |
+## How a proposal reaches a tool
+
+The model proposes an action and a target. The gateway checks the authenticated identity, organization, tool grant and current policy. The result determines what the connector can do.
+
+| Gateway decision | What happens to the ticket |
 | --- | --- |
-| Hosted Linux · 27 November 2026 · 686f29d | **1,004 distinct Python cases**. Both interpreters passed the same 967 general cases. PostgreSQL 17.12 passed all 37 additional cases. The 24 Node tests passed. |
-| Local Chrome · 686f29d | The timeline kept delayed events with their run in ten transitions in each language. The original reviewer recovered a journal receipt after a lost acknowledgement. |
-| Offline benchmark | **9 deterministic scenarios**, zero model calls. The text indicator flagged one benign example. |
-| Hosted gates · 686f29d | **4 of 8 jobs passed** per event. Tooling static analysis, advisories, secret scanning and container vulnerabilities remained open. |
-| Earlier live connector trial · 21 November 2026 | One authorized read of a public synthetic GitHub issue and one Groq summary, both HTTP 200. Matching input hashes identified the issue content. The retained evidence supports connectivity. Summary quality was not independently scored. |
+| **Allow** | A scoped read reaches the local ticket service. The service returns the authorized record. |
+| **Deny** | A close request outside the caller’s grant stops before the write. The ticket revision stays the same. |
+| **Require approval** | A different reviewer approves the specific action. The server rechecks authority, expiry and ticket revision before committing the change. |
 
-The illustrated `DEMO-102` scenario is a deterministic fixture. Local code supplied the proposed action and model assessment. The real policy gateway denied a close during a summary task. The separate live connector trial did not run this scenario. [Fixture case and screenshots](docs/CASE_STUDY.md) · [Evidence by date](docs/EVIDENCE_AND_LIMITS.md)
+The organization-scoped audit trail connects the decision and policy version to the approval and resulting effect. In the two-organization test, the other organization’s report request returned HTTP 404. [Explore the interactive architecture](https://miish-7.github.io/agent-arena-pro-showcase/architecture/) · [Trace the two-organization case](docs/LOCAL_PILOT.md) · [Verify three redacted records offline](docs/decision-sample/README.md)
 
-## Explore locally
+[![Actual approvals console showing a pending request to close synthetic ticket DEMO-102, its requested scope and the independent review step.](assets/console-current/en-approvals.webp)](https://miish-7.github.io/agent-arena-pro-showcase/evidence/#console-captures)
 
-From this website directory, run `python -m http.server 8765 --bind 127.0.0.1`. Open `http://127.0.0.1:8765/` or `http://127.0.0.1:8765/ar/`. Choose an outcome in the decision lab and evaluate the proposal. The static presentation works offline. Stop the preview with Ctrl+C. The review package contains the proposed update to the existing [GitHub Pages website](https://miish-7.github.io/agent-arena-pro-showcase/).
+*The approvals view was captured from the authenticated application using synthetic organization records.* [View all seven console screens](https://miish-7.github.io/agent-arena-pro-showcase/evidence/#console-captures)
 
-[Interactive decision lab](lab/index.html) · [Simulated administration console](console/index.html) · [Evidence explorer](evidence/index.html) · [Architecture](docs/ARCHITECTURE.md) · [Real product captures](docs/DEMO.md) · [Institutional evaluation roadmap](docs/ENTERPRISE_ROADMAP.md)
+## Verification and release status
 
-**Project by Meshal Almasoudi & Fahad Mubarak.** [Project decisions](docs/PROJECT_ROLE.md) · [Rights and reuse](RIGHTS_AND_REUSE.md)
+| What was tested | Observed result |
+| --- | --- |
+| Hosted Linux · 27 November 2026 | Python 3.12 and 3.13 each passed the same 967 general cases. The mandatory PostgreSQL 17.12 job passed 37 more with zero skips. **967 + 37 = 1,004 distinct Python cases.** All **24 Node tests** passed. |
+| Offline text indicator | Nine deterministic scenarios, zero model calls and one false positive on a benign example. |
+| Release gates | Four of eight hosted jobs passed per event. Tooling static analysis, dependency advisories, secret-scanner matches and container vulnerability findings remain open. |
 
-## Local technical qualification
+The published showcase documents an isolated engineering testbed. Production qualification remains open. An earlier, separately authorized GitHub/Groq trial recorded one issue read and one completion. [Dated results and limits](docs/EVIDENCE_AND_LIMITS.md) · [Evaluation roadmap](docs/ENTERPRISE_ROADMAP.md)
 
-Three concurrent submissions resulted in one HTTPS read. Denial and a pending review produced no change at a separate synthetic receiver. After approval, three deliveries resulted in a single persisted effect. The bilingual evidence page links the observed scope and the recorded review transaction. [Qualification and recording](evidence/index.html#qualification)
-
-## Seven views from the running console
-
-Follow a service identity from its tool grants to a versioned policy, a human decision and an auditable run. The screenshots come from an isolated, authenticated session with synthetic records. [Inspect all seven views](evidence/index.html#console-captures) · [Watch an action review](media/decision-proof.mp4)
-
-In the earlier, pre-correction recording session on 27 November 2026, local Chrome checks covered all seven views, two languages and three viewport sizes (42 combinations). Four authorized roles were checked on each page in both languages (56 combinations). All 20 Node cases passed locally. The earlier hosted results above retain their original date.
-
-The latest gallery follows a reviewer from service inventory to policy scope, an approval decision and its audit evidence. Each capture comes from the authenticated console. The example counts belong to the synthetic workspace shown in that recording.
-
-[Verify the three redacted decision records offline](docs/decision-sample/README.md).
-
-A small local Qwen evaluation used an explicitly selected synthetic ticket. In English and Arabic, an authorized read succeeded, a read-only identity’s close proposal was denied, and an eligible close required a separate reviewer. Both runs repeated the same requests. [Model evaluation and observed ticket states](docs/ENGINEERING_REVIEW.md).
+**Developed by Meshal Almasoudi & Fahad Mubarak.** [Engineering decisions](docs/PROJECT_ROLE.md) · [Media rights and reuse](RIGHTS_AND_REUSE.md) · [Run the static showcase locally](docs/LOCAL_PILOT.md#safe-quick-start-for-the-static-showcase)

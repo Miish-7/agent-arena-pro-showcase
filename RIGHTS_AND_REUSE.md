@@ -4,7 +4,7 @@ Project by Meshal Almasoudi & Fahad Mubarak
 
 The gateway mark and dimensional portal were drawn for this showcase. The portal illustrates the trust boundary. The console captures and recording show real software operating on synthetic data. The video introduction, credits and subtitles are editorial additions. The website’s interactive scenarios run in the visitor’s browser. [Artwork](assets/gate/horizontal.svg) · [Media origins](docs/DEMO.md) · [Project decisions](docs/PROJECT_ROLE.md)
 
-This review edition grants no new rights to redistribute project artwork, footage or private application source. Third-party names identify technology and technical references. Trademark clearance and any public reuse license require separate owner decisions.
+This published showcase grants no new rights to redistribute project artwork, footage or private application source. Third-party names identify technology and technical references. Trademark clearance and any public reuse license require separate owner decisions.
 
 ## بالعربية
 

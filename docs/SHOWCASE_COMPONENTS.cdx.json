@@ -1,7 +1,7 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "version": 16,
+  "version": 17,
   "metadata": {
     "component": {
       "type": "application",
@@ -32,7 +32,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "797e4cea2b3f3cf56c730523f915f70cc5571eac77d008e7af677063491b98ed"
+          "content": "949baff7870b53868674243c99a8ed2360f1eb6a079a7705eeac17d778b55663"
         }
       ]
     },
@@ -42,7 +42,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "4efb40e7ea14974e41cde7ee4195efb4e5bb11388401797729b391b5d041cc34"
+          "content": "f94d1e92aba10a2de35bb361015c1a7fa3da81b069e76492fb40fc2ad34fc4d0"
         }
       ]
     },
@@ -52,7 +52,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "c11397f71d74d3f51bd0616f2c623aaf3bf1181509c2d7eb39abfda612918ff3"
+          "content": "ff75ce684aba980f417977ae39ea6f1a1504c61c6ef953de2d762ca14e3ab5bd"
         }
       ]
     },
@@ -112,7 +112,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "a21184e1c66f2e95457bec7eb1390925cb5ef58c3a120b84409c15570f8ab603"
+          "content": "502690b1ec6520ce1d56bc94496b392cce66ea0a6f7190aec1a8f0e7f17eaf80"
         }
       ]
     },
@@ -1062,7 +1062,7 @@
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "6bbf794485d191a8eeb5d5a73b9ad24f4be6f02e9879707f3b7e08b7d23b195b"
+          "content": "cb6ef92dd6b10ea7902282647788e7bffc06913c1dfd75eeedd5eb1a32cf57f4"
         }
       ]
     },
