@@ -1,0 +1,15 @@
+/* Read-only showcase of the actual management workspace. */
+body[data-page="console"] .ax-module{max-width:88rem;padding:clamp(1.25rem,2.4vw,2rem) 0 2.5rem}
+body[data-page="console"] .ax-header{max-width:62rem;margin-bottom:1.4rem}
+body[data-page="console"] .ax-header h1{font-size:clamp(2rem,3.3vw,3.35rem);margin:.38rem 0 .55rem}
+body[data-page="console"] .ax-rail,body[data-page="console"] .ax-card,body[data-page="console"] .ax-stats>div{background:linear-gradient(136deg,#10313a,#0a1e27 65%,#071a22);border-color:#2c525f;border-radius:9px}
+body[data-page="console"] .ax-rail{background:linear-gradient(160deg,#071b24,#0a2832);padding:.9rem}
+body[data-page="console"] .ax-rail button{min-height:42px;border-radius:6px}
+body[data-page="console"] .ax-rail button[aria-pressed=true]{border-color:#24c7c3;background:linear-gradient(100deg,#12353f,#075158);color:#f4fffd}
+body[data-page="console"] .ax-layout{grid-template-columns:minmax(12rem,15rem) minmax(0,1fr);gap:.9rem}
+body[data-page="console"] .ax-stats dd{color:#f5f8fa}
+body[data-page="console"] .ax-bar[data-ax-choice=deny] .ax-track i{background-color:#ed9e8b}
+body[data-page="console"] .ax-bar[data-ax-choice=hold] .ax-track i{background-color:#efd17e}
+body[data-page="console"] .ax-bar{border-radius:6px}
+@media(max-width:48rem){body[data-page="console"] .ax-layout{grid-template-columns:minmax(0,1fr)}}
+

@@ -1,0 +1,44 @@
+[
+  {
+    "seq": 1,
+    "previous_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "payload": {
+      "decision": "DENY",
+      "reason": "scope_not_granted",
+      "status": "DENIED",
+      "policy_version": "enterprise-tools-v1+sandbox-policy-v1",
+      "policy_revision": 1,
+      "ticket_status": "OPEN",
+      "ticket_revision": 0
+    },
+    "sha256": "dd45dd885d14db89a59a298659c0139fc7966a6b917644dc41d076188d2e186c"
+  },
+  {
+    "seq": 2,
+    "previous_sha256": "dd45dd885d14db89a59a298659c0139fc7966a6b917644dc41d076188d2e186c",
+    "payload": {
+      "decision": "REQUIRE_APPROVAL",
+      "reason": "approval_required",
+      "status": "PENDING_APPROVAL",
+      "policy_version": "enterprise-tools-v1+sandbox-policy-v1",
+      "policy_revision": 1,
+      "ticket_status": "OPEN",
+      "ticket_revision": 0
+    },
+    "sha256": "840ce3e012deb324dd8af532f1cc02d95cf017d6c82523010f3cb3245716c590"
+  },
+  {
+    "seq": 3,
+    "previous_sha256": "840ce3e012deb324dd8af532f1cc02d95cf017d6c82523010f3cb3245716c590",
+    "payload": {
+      "decision": "ALLOW",
+      "reason": "human_approved_local_close",
+      "status": "APPROVED",
+      "policy_version": "enterprise-tools-v1+sandbox-policy-v1",
+      "policy_revision": 1,
+      "ticket_status": "CLOSED",
+      "ticket_revision": 1
+    },
+    "sha256": "7a39b96effd1d75e8f10fe2f41c83d52b2fe5cc283652e04aacb495a72b76245"
+  }
+]

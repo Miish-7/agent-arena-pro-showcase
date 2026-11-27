@@ -1,13 +1,15 @@
-# Credits and reuse | الحقوق والنسب
+# Identity, media and reuse | الهوية وحقوق الاستخدام
 
-Developed by Meshal Almasoudi & Fahad Mubarak
+Project by Meshal Almasoudi & Fahad Mubarak
 
-<p dir="rtl" lang="ar">تم تطوير المشروع بواسطة <bdi dir="ltr" lang="en">Meshal Almasoudi &amp; Fahad Mubarak</bdi></p>
+The gateway mark and dimensional portal were drawn for this showcase. The portal illustrates the trust boundary. The console captures and recording show real software operating on synthetic data. The video introduction, credits and subtitles are editorial additions. The website’s interactive scenarios run in the visitor’s browser. [Artwork](assets/gate/horizontal.svg) · [Media origins](docs/DEMO.md) · [Project decisions](docs/PROJECT_ROLE.md)
 
-The owner confirms ownership of the approved gate mark. The glass sculpture in the showcase is original programmatic geometry. It illustrates the policy boundary. No part of the supplied design-reference image is embedded in the page. The scene uses native WebGL, original shaders and local JavaScript. The SVG fallback and outline interface icons are project graphics. Typography uses fonts already available on the visitor’s device. This presentation distributes no third-party font or JavaScript runtime.
+This review edition grants no new rights to redistribute project artwork, footage or private application source. Third-party names identify technology and technical references. Trademark clearance and any public reuse license require separate owner decisions.
 
-The three dashboard crops and three historical approval images are real captures with synthetic data. The continuous film shows an actual disposable fixture session. The English and Arabic sharing covers use the original WebGL sculpture rendered from the presentation. The team cards use typographic initials. Review [capture provenance](docs/DEMO.md) and [engineering credits](docs/PROJECT_ROLE.md).
+## بالعربية
 
-Review permission is distinct from a license to redistribute. The owner has not selected an open-source license for the private application. Product and service names identify the technologies used and imply no endorsement.
+رُسمت البوابة لشرح الحد الذي يتحقق عنده التطبيق من صلاحية الإجراء. صُوِّرت لوحة الإدارة الحقيقية ببيانات اصطناعية. أما المحاكاة التفاعلية فتعمل داخل متصفح الزائر. تحمل اللقطات والنصوص والشعار حقوقًا مستقلة عن المراجع التقنية المذكورة. يقرّر المالك الترخيص بعد مراجعة الاسم والرمز وحقوق الاستخدام.
 
-أكد صاحب المشروع ملكية الشعار المعتمد. تولّد الشيفرة المجسّم والشبكة العصبية مباشرة داخل المتصفح، وتوثّق اللقطات والتسجيل تجربة فعلية ببيانات اصطناعية. تظهر جهة التطوير في الصفحة الرئيسية وقسم الفريق والتذييل. يعود قرار ترخيص إعادة الاستخدام إلى المالك.
+## Film audio
+
+The launch score was synthesized for these films. English narration used the offline Kokoro-82M v1.0 release. The Arabic master uses the instrumental score and Arabic screen text. The release contains rendered audio. [Kokoro model card and license](https://huggingface.co/hexgrad/Kokoro-82M)

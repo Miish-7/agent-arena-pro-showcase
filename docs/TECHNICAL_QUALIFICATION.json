@@ -1,0 +1,149 @@
+{
+  "date_local": "2026-11-26",
+  "scope": "isolated local qualification, synthetic data",
+  "same_key_concurrent_read_requests": 3,
+  "observed_local_https_gets": 1,
+  "denied_receiver_revision": 0,
+  "application_review_statuses": [
+    200,
+    409
+  ],
+  "postapproval_receiver_attempts": 3,
+  "receiver_committed_effects": 1,
+  "receiver_transport": "local trusted child process with independent SQLite store; explicit operator invocation",
+  "foreign_report_http": 404,
+  "replayed_approval_http": 409,
+  "unavailable_connector_http": 503,
+  "postgres": {
+    "version": "17.12",
+    "concurrent_sessions": 8,
+    "committed_transactions": 80,
+    "scope": "controlled restart of disposable cluster on single host; restricted-role per-tenant database operations",
+    "scope_digests_retained": true
+  },
+  "film": {
+    "duration_s": 31.3,
+    "source_s": 23.8,
+    "scope": "application-local synthetic ticket",
+    "actors": "automated synthetic requester and separate human-role approval account",
+    "original_recording_date": "2026-11-26",
+    "historical_scope": "Timing for the original study recording. Its successor in the current site is indexed separately under console_review."
+  },
+  "model_evaluation": {
+    "models": [
+      "HuggingFaceTB/SmolLM2-135M-Instruct",
+      "Qwen/Qwen2.5-0.5B-Instruct"
+    ],
+    "original_cases": 16,
+    "baseline_inference_runs": 64,
+    "abstentions": 48,
+    "invalid_outputs": 16,
+    "baseline_forbidden_action_proposals": 0,
+    "baseline_prevention_rate": null,
+    "baseline_permitted_read_proceeds": {
+      "count": 0,
+      "opportunities": 16
+    },
+    "baseline_authorized_close_reaches_review": {
+      "count": 0,
+      "opportunities": 8
+    },
+    "forced_choice_diagnostic": {
+      "runs": 8,
+      "repeat_of_original_cases": true,
+      "available_choices": [
+        "READ",
+        "CLOSE"
+      ],
+      "policy_decisions": {
+        "ALLOW_READ": 3,
+        "REQUIRE_APPROVAL": 1,
+        "DENY": 4
+      },
+      "disallowed_valid_proposals_denied": {
+        "count": 4,
+        "opportunities": 4
+      },
+      "permitted_proposals_incorrectly_denied": {
+        "count": 0,
+        "opportunities": 4
+      }
+    },
+    "model_runs_triggering_tool_calls": 0,
+    "baseline_inference_ms": {
+      "median": 1988.428,
+      "p95_nearest_rank": 2444.271
+    },
+    "baseline_policy_function_us": {
+      "median": 26.25,
+      "p95_nearest_rank": 44.5
+    }
+  },
+  "local_regression": {
+    "python_general_passed_each": 932,
+    "python_interpreters": [
+      "3.12.10",
+      "3.13.17"
+    ],
+    "dedicated_postgresql_passed": 37,
+    "dedicated_postgresql_skipped": 0,
+    "distinct_python_cases": 969,
+    "node_cases": 17,
+    "fixed_benchmark_cases": 9,
+    "fixed_benchmark_false_positives": 1
+  },
+  "console_review": {
+    "date": "2026-11-27",
+    "language": [
+      "en",
+      "ar"
+    ],
+    "authenticated_console_pages": 7,
+    "device_classes": [
+      "desktop",
+      "tablet",
+      "phone"
+    ],
+    "separate_recorded_exercise": "application-local ticket with a separate synthetic reviewer account operated by browser automation",
+    "web_film": "../media/decision-proof.mp4",
+    "captured_action_seconds": 28.5,
+    "full_dashboard_tour": "../media/enterprise-console.mp4",
+    "full_product_tour_capture_seconds": 27.166666666666668,
+    "backend_changed": false,
+    "hosted_ci_rerun": false,
+    "encoded_decision_seconds": 36.0,
+    "encoded_tour_seconds": 34.667,
+    "chrome_local": {
+      "page_language_device_combinations": 42,
+      "role_language_page_combinations": 56,
+      "functional_observations": 26,
+      "max_horizontal_overflow_px": 0,
+      "js_errors": 0,
+      "csp_violations": 0,
+      "external_requests_seen": 0
+    },
+    "local_regression": {
+      "general_python_3_12": 932,
+      "general_python_3_13": 932,
+      "dedicated_postgresql_17_12": 37,
+      "distinct_python": 969,
+      "node_current_ui_and_inherited": 20,
+      "offline_deterministic": 9,
+      "caveat": "The two general Python matrices and the real PostgreSQL lane were verified on the preceding console revision. This visual correction reran selected authentication, console and gateway regression tests, the full Node suite, the offline benchmark and OpenAPI comparisons locally."
+    },
+    "presentation_revision": "Reference-aligned seven-view console",
+    "visual_review": {
+      "dimensions_desktop_overview": [
+        1672,
+        941
+      ],
+      "dimensions_other_desktop": [
+        1448,
+        1086
+      ],
+      "fixture": "authenticated application reading disposable synthetic organization records",
+      "published": false
+    }
+  },
+  "historical_scope_note": "The original TLS read, receiver and measurements are dated above. Separate qualification receipts accompany the newer local candidate. The films retain the console of revision 01b29e0."
+}

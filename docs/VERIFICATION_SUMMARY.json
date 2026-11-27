@@ -1,6 +1,6 @@
 {
   "date": "2026-11-24",
-  "scope": "Final merged private application revision; GitHub Actions after merge",
+  "scope": "Historical merged application, 24 November 2026; GitHub Actions after merge",
   "jobs": {
     "Python 3.12": {
       "passed": 728,

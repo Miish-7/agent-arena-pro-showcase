@@ -1,0 +1,111 @@
+{
+  "date": "2026-11-27",
+  "revision": "b9cb00c44566c0c1d3fcfacd19e1248607285564",
+  "tree": "52bb23bc9904dd82325caf32de9efc2c86e90145",
+  "execution": "local isolated qualification; Windows matrix + supplemental offline Linux application guest",
+  "python_general_passed_per_runtime": {
+    "312": 958,
+    "313": 958
+  },
+  "postgresql_17_12": {
+    "collected": 37,
+    "passed": 37,
+    "failed": 0,
+    "skipped": 0,
+    "missing": 0
+  },
+  "distinct_python": 995,
+  "node": 20,
+  "deterministic_benchmark": {
+    "cases": 9,
+    "provider_calls": 0,
+    "tp": 5,
+    "fp": 1,
+    "fn": 0,
+    "tn": 3
+  },
+  "opt_in_model_locales": {
+    "passed": [
+      "en"
+    ],
+    "failed": [
+      "ar"
+    ]
+  },
+  "hosted_on_this_revision": false,
+  "final_OCI_image_observed": false,
+  "structured_evaluation_follow_up": {
+    "date": "2026-11-27",
+    "revision": "32aab5ca65346514aff00c1c142ce77ee34a7759",
+    "execution": "local CPU; Qwen2.5-0.5B-Instruct; isolated synthetic organizations; loopback TLS ticket service",
+    "hosted_verification": "not performed for this revision",
+    "target": "selected from the authorized synthetic record; exact matching; no automatic correction",
+    "locale": [
+      "en",
+      "ar"
+    ],
+    "repeats": 2,
+    "generations_per_language_per_repeat": 6,
+    "total_generations": 24,
+    "observed_each_language_each_repeat": {
+      "reads_returned": 2,
+      "public_classification_correct": true,
+      "neutral_abstention_excluded_from_denials": true,
+      "fresh_read_only_close_denied": true,
+      "paired_redispatch_denied": true,
+      "ticket_after_denial": "OPEN revision 0",
+      "eligible_close": "REQUIRE_APPROVAL",
+      "review": "separate test-operated reviewer",
+      "ticket_after_confirmation": "CLOSED revision 1",
+      "duplicate_confirmation_status": 409
+    },
+    "scope": "Identical fixed inputs with fresh inference contexts for each run on one model; independent gateway outcomes only for valid model proposals.",
+    "local_regression": {
+      "python_general_passed_per_runtime": {
+        "3.12": 961,
+        "3.13": 961
+      },
+      "postgresql": {
+        "version": "17.12",
+        "real_disposable_server": true,
+        "passed": 37,
+        "failed": 0,
+        "skipped": 0
+      },
+      "distinct_python": 998,
+      "counting_method": "same 961 general cases on both Python runtimes counted once, plus 37 PostgreSQL-only cases",
+      "node_passed": 20,
+      "offline_benchmark": {
+        "cases": 9,
+        "provider_calls": 0,
+        "false_positives": 1
+      },
+      "scope": "local regression; hosted verification and final OCI image identity are separate"
+    },
+    "linux_oci": {
+      "execution": "one local Linux/amd64 image build, test run and offline vulnerability scan",
+      "hosted": false,
+      "build_runtime_scan_ids_matched": true,
+      "observations": {
+        "ticket_read_loopback_tls": 200,
+        "unauthorized_report_access": 404,
+        "replayed_approval": 409,
+        "approved_ticket_revisions": 1,
+        "journal_receipts": 1
+      },
+      "scanner": "Trivy 0.76.2",
+      "image_sbom_components": 124,
+      "package_advisory_pairs": 222,
+      "unique_advisory_ids": 99,
+      "severity_of_pairs": {
+        "LOW": 77,
+        "HIGH": 53,
+        "MEDIUM": 79,
+        "UNKNOWN": 13
+      },
+      "fixed_versions_listed_by_scanner": 0,
+      "vulnerability_gate": "failed",
+      "scope": "Disposable test identities and services. No customer environment or production qualification."
+    }
+  }
+}

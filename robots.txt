@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://miish-7.github.io/agent-arena-pro-showcase/sitemap.xml

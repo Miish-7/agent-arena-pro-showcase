@@ -1,0 +1,31 @@
+.gateway-exhibit{align-self:center;margin:0;width:100%;min-width:0;position:relative;color:#f5f8fa}
+.gateway-view{position:relative;width:100%;aspect-ratio:1.74;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 64% 47%,#153c49 0%,#0a232e 43%,#07151e 82%);border-radius:12px}
+.gateway-view img,.gateway-view canvas{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;display:block}
+.gateway-view [hidden],.gateway-controls [hidden]{display:none!important}
+.gate-edge-label{position:absolute;pointer-events:none;color:#c6e8e7;font:600 11px/1.3 system-ui,sans-serif;letter-spacing:.085em;padding:4px 7px;background:#071820e8;border:1px solid #3b5962;border-radius:4px}
+.gate-origin{left:4%;top:47%}.gate-boundary{bottom:3%;left:50%;transform:translateX(-50%);border:0;background:#071820cc;text-transform:uppercase;white-space:nowrap}
+[lang=ar] .gate-edge-label{letter-spacing:0;font-size:12px}
+.gateway-controls{width:100%;margin:0;padding:10px 0 0;border-top:1px solid #35515c;display:grid;gap:6px}
+.gate-controls-line{display:flex;align-items:center;justify-content:space-between;gap:8px 15px;flex-wrap:wrap}
+.gate-kicker{font-size:13px;font-weight:610;color:#b9ccd1}
+.gate-options{display:flex;align-items:center;flex-wrap:wrap;gap:4px}
+.gate-options button,.gateway-controls [data-gate-step]{border:1px solid #48626e;color:#e3eeee;background:#0e242e;border-radius:5px;font:600 13px/1.3 inherit;font-size:13px;font-weight:600;padding:5px 10px;min-height:32px}
+.gate-options button[aria-pressed=true]{border-color:#19e3da;color:#7cf7e9;background:#103739}
+.gateway-exhibit[data-gate-mode=deny] button[aria-pressed=true]{border-color:#ffa89e;color:#ffc4bc;background:#40272b}
+.gateway-exhibit[data-gate-mode=approval] button[aria-pressed=true]{border-color:#ebbd7d;color:#ffd6a0;background:#3e3022}
+.gateway-controls .gate-state{margin:1px 0;color:#d4e5e9;font-size:14px;line-height:1.5;min-height:1.5em}
+.gate-actions{justify-content:space-between}.gateway-controls [data-gate-step]{border-color:transparent;text-decoration:underline;text-underline-offset:3px;color:#93eee5;background:transparent;padding-inline:0}
+.gate-angle{display:flex;align-items:center;gap:8px;color:#b9ccd1;font-size:13px}.gate-angle input{accent-color:#19e3da;width:62px;min-height:26px}
+.gate-options button:hover,.gateway-controls [data-gate-step]:hover{border-color:#bde8e5}.gate-angle input:focus-visible,.gateway-controls button:focus-visible{outline:3px solid #ffce89;outline-offset:3px}
+@media(max-width:640px){.gateway-view{aspect-ratio:1.72}.gate-controls-line{gap:5px 8px}.gate-kicker{font-size:12px}.gate-options button{min-height:36px;padding:5px 7px}.gate-state{line-height:1.5}.gate-angle input{width:56px}}
+
+.gateway-view{border-radius:0;background:#06141c}
+.gateway-view .gate-edge-label{color:#e2f1f1;padding:6px 10px;border-radius:6px;background:#071a22d6;font:600 12px/1.3 "Segoe UI",Tahoma,Arial,sans-serif;letter-spacing:.025em}
+.gateway-view .gate-origin{left:3%;top:38%}
+.gateway-view .gate-exit{right:2.5%;top:18%}
+.gateway-view .gate-origin::before,.gateway-view .gate-exit::before{content:'';display:inline-block;width:7px;height:7px;border:1.5px solid #7ff5e8;margin-inline-end:6px;vertical-align:1px}
+.gateway-view .gate-origin::after,.gateway-view .gate-exit::after{content:'';position:absolute;top:100%;left:50%;height:clamp(12px,2.5vw,36px);width:1px;background:linear-gradient(#7ba7ac,#7ba7ac1a)}
+.gateway-view .gate-exit::before{border-radius:50%}.gateway-exhibit[data-gate-mode=deny] .gate-exit::before{border-color:#ffb4a3}.gateway-exhibit[data-gate-mode=approval] .gate-exit::before{border-color:#f0c282}
+.gateway-view .gate-boundary{font-size:11px;letter-spacing:.17em;bottom:2%;border:none;padding:4px 8px;background:#07151eba}
+html[lang=ar] .gateway-view .gate-edge-label{letter-spacing:0}
+@media(max-width:600px){.gateway-view .gate-edge-label{font-size:10.5px;padding:4px 6px}.gateway-view .gate-boundary{font-size:10px}.gateway-view .gate-origin{left:1%;top:32%}.gateway-view .gate-exit{top:18%;right:1%}}

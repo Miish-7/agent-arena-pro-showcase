@@ -1,0 +1,25 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.739
+Actual local console session with synthetic records.
+
+00:00:03.739 --> 00:00:08.813
+A read-only service requested a close. Policy denied it. The local ticket remained open.
+
+00:00:08.813 --> 00:00:12.652
+Another service holds the close grant. Its request now requires human approval.
+
+00:00:12.652 --> 00:00:16.747
+Test automation uses a separate reviewer account to check the action and target.
+
+00:00:16.747 --> 00:00:21.961
+The test confirms using that account. The local ticket closes once, moving from revision 0 to 1.
+
+00:00:21.961 --> 00:00:26.747
+The first organization can verify and retrieve the run evidence.
+
+00:00:26.747 --> 00:00:32.000
+A separate organization sees its own records. The first report returns HTTP 404 for its account.
+
+00:00:32.000 --> 00:00:36.000
+Project by Meshal Almasoudi & Fahad Mubarak.

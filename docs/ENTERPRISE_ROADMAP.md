@@ -1,10 +1,10 @@
-# AGENT//ARENA · Enterprise evaluation roadmap | خارطة التقييم المؤسسي
+# AGENT//ARENA · Isolated evaluation roadmap | خارطة التقييم المؤسسي
 
 [English](#english) · [العربية](#العربية)
 
 ## English
 
-Each item describes proposed work and the evidence to collect before a pilot can advance. The project currently documents a research testbed.
+The engineering release has already exercised two synthetic organizations, a local TLS connector, one independent approval and a local restore. This roadmap sets out what an organization would still need to test in its own installation before wider use. [Executed pilot](LOCAL_PILOT.md)
 
 ### Expand the fixture corpus
 
@@ -44,7 +44,7 @@ Work with the organization that owns the data to document residency, retention, 
 
 ## العربية
 
-يحدّد كل بند عملًا مقترحًا والدليل المطلوب قبل توسيع التجربة. ما يوثّقه المشروع حاليًا هو مختبر بحثي.
+شملت النسخة الهندسية مؤسستين اصطناعيتين وموصّل TLS محليًا وموافقة مستقلة واستعادة محلية. تحدد هذه الخارطة ما يبقى على الجهة التحقق منه في بيئتها قبل توسيع الاستخدام. [التجربة المنفّذة](LOCAL_PILOT_AR.md)
 
 ### توسيع مجموعة التجارب الحتمية
 
@@ -82,4 +82,4 @@ Work with the organization that owns the data to document residency, retention, 
 
 وثّق مع الجهة المالكة للبيانات متطلبات موقع البيانات والاحتفاظ والصلاحيات والتزامات المراجعة والموافقات اللازمة لذلك التشغيل.
 
-[English field notes](https://miish-7.github.io/agent-arena-pro-showcase/notes/#roadmap) · [الملاحظات العربية](https://miish-7.github.io/agent-arena-pro-showcase/ar/notes/#roadmap) · [Evidence and limits](EVIDENCE_AND_LIMITS.md)
+[English field notes](../notes/index.html#roadmap) · [الملاحظات العربية](../ar/notes/index.html#roadmap) · [Evidence and limits](EVIDENCE_AND_LIMITS.md)

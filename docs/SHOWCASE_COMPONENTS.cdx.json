@@ -1,82 +1,1318 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "version": 3,
+  "version": 16,
   "metadata": {
     "component": {
       "type": "application",
-      "name": "AGENT//ARENA public presentation",
-      "version": "showcase-review-2026-11-24.3"
+      "name": "AGENT//ARENA public showcase",
+      "version": "hosted-verification-686f29d"
     },
     "properties": [
       {
-        "name": "arena:inventory-scope",
-        "value": "Project-authored browser code, styles and WebGL fallback. SHA256SUMS covers the complete distributed file set including media."
+        "name": "scope",
+        "value": "Reviewed static Pages tree and all locally delivered first-party visual, media, documentation, script and CSS assets. Checksums and this inventory exclude themselves."
       }
     ]
   },
   "components": [
     {
       "type": "file",
-      "name": "assets/site.js",
+      "name": ".nojekyll",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "30d7621acd993927f317695ca70cf7b0fd84b0745f5b742f5b94349b9554d880"
-        }
-      ],
-      "properties": [
-        {
-          "name": "arena:origin",
-          "value": "project-authored; no third-party browser package"
+          "content": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
         }
       ]
     },
     {
       "type": "file",
-      "name": "assets/site.css",
+      "name": "README.md",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "1e461b4f67e22fa134566fad782c042ad40c5c4dab64700070e1f6e3d5d96728"
-        }
-      ],
-      "properties": [
-        {
-          "name": "arena:origin",
-          "value": "project-authored; no third-party browser package"
+          "content": "797e4cea2b3f3cf56c730523f915f70cc5571eac77d008e7af677063491b98ed"
         }
       ]
     },
     {
       "type": "file",
-      "name": "assets/glass-scene.js",
+      "name": "README_AR.md",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "b49b71c058c9593d7b76bf71057e8287753b35636ff8445b2f47b665df79e25d"
-        }
-      ],
-      "properties": [
-        {
-          "name": "arena:origin",
-          "value": "project-authored; no third-party browser package"
+          "content": "4efb40e7ea14974e41cde7ee4195efb4e5bb11388401797729b391b5d041cc34"
         }
       ]
     },
     {
       "type": "file",
-      "name": "assets/glass-fallback.svg",
+      "name": "RIGHTS_AND_REUSE.md",
       "hashes": [
         {
           "alg": "SHA-256",
-          "content": "d0efcc93680d4c22cdf50e0ce1c272cb386661473fe62447a727f2220b893685"
+          "content": "c11397f71d74d3f51bd0616f2c623aaf3bf1181509c2d7eb39abfda612918ff3"
         }
-      ],
-      "properties": [
+      ]
+    },
+    {
+      "type": "file",
+      "name": "about/index.html",
+      "hashes": [
         {
-          "name": "arena:origin",
-          "value": "project-authored; no third-party browser package"
+          "alg": "SHA-256",
+          "content": "9477153c49754e3d5fd1f1e4e4859141b4f64ad8ba228199485f5524a7b7e6c1"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "ar/about/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "58b3864dd13fb9c32b7237754f3114ac02d29224fc5e3edd7466fc8800675b19"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "ar/architecture/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f7c5b882fb958665f9b1c0599bad0337f7bd522d4b01dd794edf99aab8273f7f"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "ar/console/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d7a903622d3c8c13b12917c271a7ca1d6492b2f62543d2ba119e10847fb3c360"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "ar/evidence/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "719def66959001a4ff1aecea4322ee57a5b3e5f614f94cc31efc2566f70950fc"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "ar/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a21184e1c66f2e95457bec7eb1390925cb5ef58c3a120b84409c15570f8ab603"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "ar/lab/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0976554065a02d07f4f15e9ffaceb4a03ed8308a285f1107fcca264d3b6aa5f4"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "ar/notes/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f10dde8e720e08ec254b3075313d6574970413d85ad95550bbb3b605f4806f86"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "ar/platform/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "77bed9687c7a5032a174ecaf7e9dd2e10540613d13fa559f39df5c8cd3d54029"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "ar/resources/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "89a34961d898ea4e6c8bf77b9b8f6e2d223d73e1fe7a962563d0cd7c382e6919"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "ar/sectors/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "245dc33ff11210cff448d893a571fc638537e8c43847cc81af13c7697c0d9cbb"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "ar/security/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b69888e52e04b547a5c8461529a647c0e9c8217b7163a983fafd16a5087cf2ab"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "architecture/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "adc7d3e5d11808ac3dfeb8496ca325ea4ab51d10e35184ae4c9aa5d49684e283"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/approval-pending.png",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e738c49d943243cdcd01c50df30f40afd7089dd02ee8797b07b3a91dfe9784b8"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/arena-mark.png",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "1cab8bf78e1d7026a40a237b016da1275a9384f5983d82ed47f9ddc1db700dbe"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/blocked-new.png",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "db31d9bc16d23f9db043d3efa0a77f0690fcbc2e9f27762ccc3371904c9949c6"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/console-current/ar-agents.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "04e901f2c09d64fdfd8883b58d17c07a521eff3eb8caa12f1751d80d7263b29b"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/console-current/ar-approvals.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "44690a2daa32ca1bb6f93cb63ccd5b9171ae1a12662cb20da96872ad7d1e7511"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/console-current/ar-audit.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "caf4098e8671778174a7800a0915d49f62677684d9240d48dfbf3bf9fc50d35a"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/console-current/ar-monitoring.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "73753ee7e53cd6317c876aae59f7c43b41fc4ca4ca06211fa9771bbe46bef77b"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/console-current/ar-organization.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "1d6e6ddde70748a90fb2c57b57d6edaf714c429584135228f6faf325d7a4c582"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/console-current/ar-overview.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "01143dfea80c6bcc22a281b8a1d8caf20e898e358d21aeeee339196af29c2e09"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/console-current/ar-policies.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "5e12f7676f2c988607532a0eb0dcf7411b18a6941be847b65f9e20d3daa6354a"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/console-current/en-agents.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3dcf74281969699f1b54da84a0aa5eacbca8aa35910f9183dba986f5a73ce1c0"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/console-current/en-approvals.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "24aee91a7b1d0f3bf1d5a9e0d121c76647561aa8375b4089b53f1abb2dbe1d0e"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/console-current/en-audit.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7a1a01932066af68db9a350f35d17e316deef8dd83ad5ae21f84d7dc7b267d72"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/console-current/en-monitoring.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c012a4587470b80639e5c80c1c21b1010aad73ad0f7c2ae7f5aca1892e0570c8"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/console-current/en-organization.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "440e0e1e6eb8e7fb37259f5db53c5650e8bee70c390f56b6db50a753f9f8812f"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/console-current/en-overview.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "85d9b1f27a7500f4d3e63fe14eaec430d581c069f97918430f61a44c1c6e21bf"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/console-current/en-policies.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "babc9235c65b72114f27a4f307d4aca9298f801323c0a4642077db8a670b81e1"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/dashboard-new-preview.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "826be1dbe348909916c55e5334d0ec1828354bd33799947494feb49d7472a294"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/dashboard-new.png",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "74162d68c59b1f2e4dafdd0dc4b2fddba8c08bea15fbe23de580820ac57f30d2"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/decision-proof-poster.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4f03d0c3df172a71cb7808114883e7f82bdd7f91b5f7181f12baef9700631047"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/enterprise-overview-ar-mobile-preview.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0a4fb1772ea17451c36dde7cc293322c14bb0eaa169b357cf93e8715dd10d4a8"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/enterprise-overview-ar-mobile.png",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "cbdcb98a74d745356546d6cfa3b84a6fd511691e6b5a014f5624fa0fff34c9e9"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/enterprise-overview-ar-preview.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "3b2d8de4eb0f7b176cf7c94a1cab6d647fe4a16bfe05d0c4bf6b13139d023e4f"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/enterprise-overview-ar.png",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "61782cad71522e9479fb0ac1d1fa39ab58ebf42f7199fdaa0720c17ba139986b"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/enterprise-overview-en-mobile-preview.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "001af6df8d8dce4b04ba2269084b4f7348df30d67aa1e677eaeb856f2f52bd5e"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/enterprise-overview-en-mobile.png",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b5fbaaca20f03f4bf7d02407ce26b124bdb8bb07327df8dcf900bdf0416fd852"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/enterprise-overview-en-preview.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ad05481f0a0b1add3686b3016d97df81d1cb54a7b1de16e6ad24ff6c1ecfb798"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/enterprise-overview-en.png",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "220529c97ce460f24632e333b036451c5b71ea34dcabd4b8b55dff23ae8770e0"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/enterprise-poster.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ad05481f0a0b1add3686b3016d97df81d1cb54a7b1de16e6ad24ff6c1ecfb798"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/evidence-new.png",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b2112b0ec58b5aa603588e25e01fa2e26212cae6fe5999a41a3d6b59e7c3ffa9"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/explorers/console-reference.css",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "932549a58ee40f75a2597aa0347022165b8099cd5e6c106d453fd162d97ca7ce"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/explorers/interactive.css",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c1561d67d758ca4e5be8ed8a11c2b6f5d3fdb9a2629dcd5496d5f08f2ce35140"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/explorers/interactive.js",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "1fe28ac886e997c8317a9535d4bf98ba0acaa2b1fc5be3992b351da2b8e818d5"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/gate/favicon-32.png",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ccfab031c8587e15b536514b32cd88ada51420b236d9546eb80fc8c35483b990"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/gate/favicon.ico",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "916a1ac2373d73a6411eece96eb7b93271ab5769b07c45afade2f7aa56d7f89c"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/gate/favicon.svg",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8b647d66ae772721ef022ccffb63e363a3dfb25887cfaedb59e42828b5cde154"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/gate/gate-render.js",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "58fa4f01c24ca15a8f080383ba6a3e937443dc34194ad0be8a91461329515147"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/gate/gate.css",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "740ecff7ce85ec2a037ad48c5a654afc97d5ed3b77bfb61c026384b006f84f5f"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/gate/gate.js",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4b82d3747007d6c4956e372f98cf625b14cd7a5bdcc37f58cc2993b3162f2bc4"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/gate/horizontal.svg",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8596499d75b3413a805c921f47687e756068a42aac4cc41a07692c242861299a"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/gate/mark.svg",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b9d5d1a38f43508f9833238947815543c454c71520c5362e3675e0cb6cd85857"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/gate/portal-ar.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "09456878eddf8d0a4144ffe85ef4fb15b6fa98ceb8de7641a42c8247abdee515"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/gate/portal-deny-ar.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b55a99ceaef23722568b36db2af3d662a2bbd480a02243a25e35c3a48a999be8"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/gate/portal-deny.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "713624ba5fa2c23617ea37723472bae91ac48a954015a5ba1da2697c179038d2"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/gate/portal-proposal-ar.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "2b19567b3b9a400e8adb5854682eea631e26b5a993d9246479a2ce0b8c02190a"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/gate/portal-proposal.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "450cdff7a75e753f51df59c7664e77ee5686cf4adae971e1f97836d53874c8bb"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/gate/portal-review-ar.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "75509a36cd0b1c2259095b26f5a9773b380025188711fd226b2b98d2bba105dc"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/gate/portal-review.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "99ecfca36a658ba6589f0a9ee778ecd75e50a992a34e77135b575d72bfa3055b"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/gate/portal.webp",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "bc17727f4d672ee3ce29ccd47c69c18537d4fc472ee5d6d5f654d54cf514e198"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/identity/favicon-32.png",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ccfab031c8587e15b536514b32cd88ada51420b236d9546eb80fc8c35483b990"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/identity/favicon.ico",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "916a1ac2373d73a6411eece96eb7b93271ab5769b07c45afade2f7aa56d7f89c"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/identity/favicon.svg",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8b647d66ae772721ef022ccffb63e363a3dfb25887cfaedb59e42828b5cde154"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/identity/horizontal.svg",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8596499d75b3413a805c921f47687e756068a42aac4cc41a07692c242861299a"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/identity/mark.svg",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b9d5d1a38f43508f9833238947815543c454c71520c5362e3675e0cb6cd85857"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/launch.css",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0f4c1396579423bc710a41f9980f48358090b2cda6ed79fa68feb17d4b351d16"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/launch.js",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "5a0605c9545361ba1532190b2eb6d8106e91e775af44a352ad9af040fcc73655"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/launch/GITHUB_PRODUCT_DEMO.jpg",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "2969c0f6eb1d44e02a65b8cb258e5680ba1e689e309ebefcca31f5d04c7a9f66"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/launch/LINKEDIN_LAUNCH_EN.jpg",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "32c3a7f0a1f3c2eae1a18dd4d2faec99b09b1e85e2f84beb3a138ae8fab02b9a"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/launch/MAIN_PRODUCT_FILM_AR.jpg",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "07f72dcffe1140c0b0dad5012c1e0b4edf0c4dfb1f175e978120a66c97e9dfa0"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/launch/MAIN_PRODUCT_FILM_EN.jpg",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "313634fe63264769d14e7b0da464d2fd9c750836e0c61c4d1b5cf1c93f51303f"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/launch/PRODUCT_TEASER.jpg",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4fc6f7db7d3f0e43f36bfed60ac7fcc8c1a7e566dbce6572a18a26dcf8476086"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/reference.css",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "f7cfd3fd4e7689de77e10f7278670d78dd888b1912d47607ce1c484ea4c88641"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/scope-denied.png",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "df409fa9f1a496ab0cf98d1bd79f26d5bb534f03ed9de6c87ed7e173d7798445"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/showcase.css",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "e3bbeb71ead0c7dcef02d7115dc9658cdf03e3acb2d3b8f31d882749582b6e65"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/showcase.js",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d053e0ed3ae698dc8f3f9fd40b7e0737c2bbecc7d71e7730463297ceee3639df"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/social-cover-ar.png",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fa4ec537909765761edf48b54fac3021ce541349f2c37f56dd7613b5ac8e1ff2"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/social-cover.png",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9feaabbff118d3b31777cb36125c49c78d4ff40a8613b291c07fa238391b54ca"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "assets/ticket-closed.png",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6778bdf1d89feb097b68708cd81b2e04a894009d139afc0c9ea2925f61be38e7"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "console/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "16723a8cadf0a96a63822d5b2eb84175d1045dda5b577c91a77c094b32ad7912"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "docs/ARCHITECTURE.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "77bef3a53673faeb1d0a1b999e04683a0752d4775af4724c81d399ae3696a88f"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "docs/CASE_STUDY.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "db9aecedb41146d456a9dfee69d2db5031d331bb1cedcc6676b6a6b874f28f70"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "docs/DEMO.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "75e302d30ec1fcb4b2cfdc7be2af5f6ffe05cc7ec120c3063aa14c9ad187b6a1"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "docs/ENGINEERING_REVIEW.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0a6e6462243df2dcabaa7fe5e79ce7da93af90bdbfd44670e9b05e20dc2ca3f6"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "docs/ENTERPRISE_RESULTS.json",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "58f79e46e4c42553c6cd8d2c636d6bd9adce7a6336741d0e0165c5a0147e38f2"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "docs/ENTERPRISE_ROADMAP.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "4a887666f11a1402baa13df1dc2adb78325a386058fab01751d7839788aa8559"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "docs/EVIDENCE_AND_LIMITS.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "dcfe92637c35e80f393d825d8ee507ff60e73e8e9bb8ba67bfeadbf66044a40f"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "docs/LOCAL_PILOT.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "465ef78bbf03d79dd676516fa179f67042c374102ef39e92093743e82a44f345"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "docs/LOCAL_PILOT_AR.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8882b83b2ef0bce8fb63b9aba02f2bb49ef80922b30d64c2111cd1ba07ee42e3"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "docs/LOCAL_RELEASE_RESULTS.json",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6d46cc914037460bc31d6e4ecce425988e04c18c1a630a8ffbbd2f943535077b"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "docs/PROJECT_ROLE.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "db035e893838277fd6f87cd0f456eadd55fcac10db5ca53ff1b544230917113f"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "docs/TECHNICAL_QUALIFICATION.json",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ac2976e1316e305ce8e621376a641467803d1d96c22b16a893df8a999bb29ed9"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "docs/VERIFICATION_SUMMARY.json",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "679be259f99108fab50c7bc2cb7b6e0d0fff214ae6b7848786bc447ebe302b2f"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "docs/decision-sample/README.md",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c869dd8ac391b9af3a358ceb005b51c35cc98dac54c082eedfe5296b2fb5b9c2"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "docs/decision-sample/checkpoint.json",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "541b61eadba16e69c3e513f6c6ef1d6757e185f015a7b75c5c09f959d1d40cdf"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "docs/decision-sample/records.json",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "195512f60748e1990117aa9df5407efbc1ba86633dbf9384dc7e12c2452c0cd2"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "docs/decision-sample/verify.py",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7bcc89cfe11a08b3522b8723a49bf46577005bdc5a79209b8e5171fb7e6ce9ca"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "evidence/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a9ff2d83390e3f816099a56336317d85943a8b54c28f147f2b9ddc195bb31493"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "6bbf794485d191a8eeb5d5a73b9ad24f4be6f02e9879707f3b7e08b7d23b195b"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "lab/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "d606b6c0a4ab6c7aac638703f7edcc129d5a2df7fa0a3694e7a56761b85c9c65"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "media/INTERACTIVE_WALKTHROUGH.ar.vtt",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "689ce169b4abdf11117607b8b62e95fdeef8c2de4bbb64a87664a3e6f0156951"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "media/INTERACTIVE_WALKTHROUGH.en.vtt",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "09f63bc8bc0cb981fd0ad1327760142059455fbde68d15c11fd37f732a19cd18"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "media/INTERACTIVE_WALKTHROUGH.webm",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "09152e90e2b9dbfbb047db7ddb736badcafc1731f132fd491f2e89af6f40d3ab"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "media/decision-proof.ar.vtt",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "96fcdab6fe1bece205b7f850e00d0970c3069ac9338b5fb26ac785dbfdb01771"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "media/decision-proof.en.vtt",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a708979f2c914b079e3253b45a1d5ffa670fcd3de5263a9ba670d5c62696468d"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "media/decision-proof.mp4",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c8f970968c1d8d0cc5ea6b5e45ce30df0dac564cdffcefebc66fe27e075fc9a0"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "media/enterprise-console.ar.vtt",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8737aa722dec9fdd2785ef2ed4d89cdf4ced2d436278c3a300a3a3b9972dd47a"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "media/enterprise-console.en.vtt",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "61fca8dbb4110504b58c775596a54ee51444e5805822392f5722218cd7b6ffb2"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "media/enterprise-console.mp4",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "501b3040c6784aa306e97b6a9c3f9cf4b9ca275a86bfef50398937a86d038a79"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "media/fixture-demo.ar.vtt",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "7ab5797c4a91b7ca6a665c091a3767f4822d67544dcdfd39363b1ef399fbcee3"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "media/fixture-demo.en.vtt",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a44fc731d66f46cb340c06b562cebb660f3dd8313700465d47459b5cd1b1ca64"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "media/fixture-demo.mp4",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "eccf4e77c9e78c8daa2fb5c52bd0a114a1811eba8eeb89bcaaa366c6b3cbbc11"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "media/launch/GITHUB_PRODUCT_DEMO.mp4",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "90f0a60d0ccccaed66acbf2442453c4e909fdf4aa9a2e4c536d69ef29a6896ae"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "media/launch/LINKEDIN_LAUNCH_EN.mp4",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "0729fc3cd3e2d1f977cb6d61552210293c7286bc99ae22fdb7ade78475db0908"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "media/launch/MAIN_PRODUCT_FILM_AR.mp4",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "5d26a10122b73ea2cd4b5b191786a0cf58e3d7cf45c65eb64431325c771193ea"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "media/launch/MAIN_PRODUCT_FILM_EN.mp4",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9e910468227d7f85f5d21d43b93bbf5ee755136cf397b735f6f8fa6aab7bddab"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "media/launch/PRODUCT_TEASER.mp4",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "bf54cd9b4d478f77d419538ce9a2451e586e92f50c467a64d774788a20532f19"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "notes/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ce84fce9160c8aa7d317b137ff5940045ed1f083c61e8ec12eb90bf431c7ccec"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "platform/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ef20fbd6c8565ead0115e292761835afaf814d8312e61430533069e942448482"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "resources/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "adeafd27efc3bd2926becbe4e2e5c99000506f1c97c908c539b95bc339cea05f"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "robots.txt",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "fd2f6dee674c5e8bc904dfc5ce65930701d280f0a358ff99b61e569ea4a52bd0"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "sectors/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c4a0a2d26f2966b112175eca436138cf8f49737139ca0883b76135ca8a6989e1"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "security/index.html",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "ab37c87310311daea9cca2bb0f027532f84d6320bd070bc0eb61cbcf1ab11abc"
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "sitemap.xml",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "a4361d6c74b51cb7475ec9c48aee1262122eb946d4414c76182985f2a746a567"
         }
       ]
     }

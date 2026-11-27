@@ -1,45 +1,65 @@
 # Evidence and limits | الأدلة وحدودها
 
-**761 distinct Python cases passed on merged main on 24 November 2026** — 728 shared cases plus 33 dedicated PostgreSQL cases. [English field notes](https://miish-7.github.io/agent-arena-pro-showcase/notes/#verification) · [ملخص التحقق بالعربية](https://miish-7.github.io/agent-arena-pro-showcase/ar/notes/#verification).
+The enterprise candidate and the earlier merged research release were tested on different revisions. The figures below retain their dates and scope. The downloadable JSON contains redacted observations. Source code, credentials and raw hosted logs stay private.
+
+## Verification on 27 November 2026
+
+| Scope | Python | Node | Evidence |
+| --- | --- | --- | --- |
+| Hosted Linux · 42280e1 | 966 general plus 37 PostgreSQL 17.12 cases, 1,003 distinct | 20 passed | Four of eight jobs passed per event. The four open security gates remained visible. |
+| Hosted Linux · 686f29d | 967 general plus 37 PostgreSQL 17.12, 1,004 distinct | 24 passed | Four of eight jobs passed per event. The tested container image matched the scanned image within each run. The four security gates remained open. |
+| Local Windows · 686f29d | 967 general plus 37 PostgreSQL 17.12 cases, 1,004 distinct | 24 passed | Chrome in English and Arabic discarded late responses when the reviewer changed selections, filters, session or view. Journal recovery confirmed one receipt per authorized action. |
+
+Each general suite ran on Python 3.12 and 3.13. The dedicated database gate passed all named cases with zero skips. The offline benchmark used nine synthetic cases and zero provider calls. The local exercise used independent synthetic organizations and an automated reviewer account. The existing films record an earlier isolated session. The hosted test matrix and the local browser comparison used the same source tree. [Release observations](ENTERPRISE_RESULTS.json)
+
+## التحقق يوم 27 نوفمبر 2026
+
+اجتاز الالتزام المستضاف 42280e1 على Linux عدد 1003 حالات Python مميزة و20 اختبار Node. بقيت أربع بوابات أمنية مفتوحة من ثماني وظائف. اجتاز الالتزام 686f29d على Linux المستضاف وWindows المحلي 1004 حالات Python مميزة و24 اختبار Node في كل بيئة. وأكد اختبار مستقل على Chrome محليًا بالعربية والإنجليزية صحة عرض أحداث التدقيق المتأخرة واستعادة إيصال التسليم. اجتازت الحالات المخصصة لقاعدة PostgreSQL 17.12 بوابتها دون تخطٍّ. سجل المعيار الحتمي تسع حالات ببيانات اصطناعية وصفر استدعاءات لنموذج. يظهر في الأفلام تسجيل سابق من المختبر.
+
+## Hosted revision 264cfe5 · 25 November 2026
+
+| Check | Recorded outcome |
+| --- | --- |
+| Python 3.12 and 3.13 | 928 general cases passed on each interpreter. The suite was repeated for compatibility. |
+| Real PostgreSQL 17.12 | 37 additional cases passed, zero failed, zero skipped. **965 distinct Python cases** across the general and dedicated sets. |
+| Node and fixed benchmark | 17 Node cases passed. Nine synthetic scenarios made zero model calls. The lexical indicator produced 5 true positives, 1 false positive, 0 false negatives and 3 true negatives. |
+| Security gates | Five of eight hosted jobs passed. The open gates concerned tooling static analysis, dependency advisories and container vulnerabilities. |
+| Two synthetic organizations | The permitted TLS read succeeded. Denial left the ticket revision untouched. An approved close advanced its revision once. Replaying that approval returned HTTP 409. Requests for the other organization’s protected record returned HTTP 404. Connector unavailability returned HTTP 503. The restored audit history passed local verification. |
+| Report integrity | In the pending and approved states, an independently computed action digest matched the scoped PDF, JSON and recorded decision. The detailed reviewer identity is available through authorized JSON and audit records. |
+
+<a id="what-remains-unverified"></a>
+
+These observations describe the engineering candidate tested in isolation. A claim of production qualification would require closing the security gates and validating the deployed environment, including real identity operations, independent retention, recovery and agreed service targets. [Enterprise results](ENTERPRISE_RESULTS.json) · [Recorded exercise](LOCAL_PILOT.md) · [التجربة بالعربية](LOCAL_PILOT_AR.md)
+
+<a id="final-application-acceptance--24-november-2026"></a>
 
 ## Hosted verification · 24 November 2026
 
-The private source project's GitHub Actions workflow completed successfully on the final merged private application revision (main, 24 November 2026). The dashboard tests and offline benchmark ran as steps within the Python jobs. This redacted summary records what each check actually measured. The original CI logs require private repository access.
+The earlier merged research release passed **761 distinct Python cases**. The shared set of 728 passed on each of Python 3.12 and 3.13 with one Starlette/httpx test-client warning per runner. The 33 PostgreSQL-only cases, skipped on those two general jobs, all passed on a separate PostgreSQL 17.12 server. Its Node suite passed 13 cases. Its nine synthetic scenarios recorded zero provider calls and zero unauthorized writes. [Dated merged-release results](VERIFICATION_SUMMARY.json)
 
-| Check | Recorded result | Interpretation |
-|---|---|---|
-| Python 3.12, default SQLite path | 728 passed, 33 skipped, 1 warning | The skips were the PostgreSQL-only cases. The warning concerned the Starlette/httpx test client. |
-| Python 3.13, default SQLite path | 728 passed, the same 33 skipped, 1 warning | Repeated coverage on a second interpreter, with the same warning. |
-| Dedicated PostgreSQL 17.12 job | 33 passed, 0 failed, 0 skipped | The 33 cases ran against a real disposable database. They exercised role permissions, transactions and tenant row-level security. |
-| Node dashboard and API documentation tests | 13 passed | Simulated browser DOM, including delayed responses after logout or an account switch and documentation credential privacy. |
-| Offline benchmark | 9 fixed synthetic cases, 0 provider calls, 0 unauthorized synthetic writes | The lexical indicator recorded 5 true positives, 1 false positive, 0 false negatives and 3 true negatives. A benign note quoting a warning triggered the false positive. |
+<a id="final-documentation-and-dependency-review"></a>
 
-**The illustrated fixture.** Local code supplied the `DEMO-102` proposal and the Blue assessment. The application's gateway denied the close during a summary task. The image shows zero real LLM roles. Nine curated inputs give limited evidence about unfamiliar inputs or live models. [See the actual screenshots](DEMO.md).
+The dated merged-release summary records a ReDoc build-dependency advisory under observation. The enterprise candidate has its own security results in the table above. [Historical verification record](VERIFICATION_SUMMARY.json)
 
 ## Authorized live summary · 21 November 2026
 
-| Observation from the retained records | Result |
-|---|---|
+| Observation | Retained evidence |
+| --- | --- |
 | Retrieval | One anonymous GitHub GET of public synthetic issue #1, HTTP 200. |
-| Transfer and response | One Groq completion using `openai/gpt-oss-20b`, HTTP 200, with only the bounded issue title and body as issue content. |
-| Authorization and integrity | Read and outbound transfer were allowed. Both audit outcomes recorded success. The input SHA-256 matched across the two records. |
-| External changes | Zero GitHub writes recorded. |
+| Transfer | One Groq completion using `openai/gpt-oss-20b`, HTTP 200. The only issue fields transferred were the bounded title and body. |
+| Authorization and integrity | Local read and egress decisions allowed the transfer. Both audit outcomes recorded success. The same SHA-256 identifies the input in both records. |
+| Remote effect | Zero GitHub writes recorded. |
 
-This was one authorized, read-only summary. The matching digest establishes which issue input was supplied. The retained metadata omits the summary text, so an independent reviewer cannot score the answer's accuracy from this record. The trial did not exercise the security scenario shown in the screenshots.
+This single read and summary demonstrated connectivity for the authorized public input. The retained record omits the full output, so an external reviewer cannot independently score its accuracy. The separate `DEMO-102` security example used fixed proposals and made no live model call. A lexical warning on one benign fixture illustrates the limits of the small offline benchmark. [Fixture case](CASE_STUDY.md) · [Product captures](DEMO.md)
 
-## What remains unverified
+## للقارئ العربي
 
-Production identity-provider interoperability, combined PostgreSQL and SSO operation under production conditions, deployment controls, recovery and independently retained audit records require further validation. The RLS tests assume a trusted application database role and migration owner. The project makes no claim of independent security certification or enterprise production readiness.
+في 25 نوفمبر 2026 كان إجمالي النسخة المؤسسية المرشحة 965 حالة Python مميّزة، منها 37 على PostgreSQL حقيقي. نجحت 17 حالة Node. اجتازت 5 مهام مستضافة من أصل 8. بقيت نتائج التحليل الساكن للأدوات وتنبيهات الاعتماديات وفحص الحاوية مفتوحة. في تجربة المؤسستين بقيت التذكرة دون تغيير بعد الرفض، ونُفّذ الإغلاق مرة واحدة بعد موافقة مستقلة، ثم أعاد تكرار الموافقة HTTP 409.
 
-**للقارئ العربي.** بلغ الإجمالي المميّز 761 حالة Python. نجحت 728 حالة على كل إصدار من Python، وتكررت المجموعة نفسها. وشغّلت المهمة المستقلة حالات PostgreSQL الـ33 كلها بنجاح. الصور توثّق قرار البوابة في محاكاة محلية حتمية. أما رمزا HTTP 200 فيخصّان تجربة تلخيص واحدة مصرحًا بها. السجلات الأصلية خاصة، والأرقام هنا مؤرخة ومحددة النطاق. [الصفحة العربية](../README_AR.md).
+تعود الحالات الـ761 إلى الإصدار البحثي المدمج في اليوم السابق. وتعود استجابتا HTTP 200 إلى تجربة الاتصال المخوّلة بتاريخ 21 نوفمبر، حيث قُرئت تذكرة GitHub اصطناعية واحدة وأرسل طلب تلخيص واحد إلى Groq. أما الحالة المصوّرة والسيناريوهات التسعة فاستخدمت مقترحات حتمية. [دليل الإصدار](ENTERPRISE_RESULTS.json) · [دليل القارئ العربي](../README_AR.md)
 
-## Final application acceptance · 24 November 2026
+## 26 November · Local technical qualification
 
-The merged revision was verified on `main`: three hosted jobs succeeded, with 728 passing cases on each Python version and 33 PostgreSQL-only cases passing in a separate job. Node reported 13 passed, 0 failed. Automated code and security reviews on the identical submitted tree reported no major code or security findings; this is not a third-party penetration test. Local chain validation detects inconsistencies within its trust assumptions; it is not independent immutable retention. RLS does not protect against privileged database roles or arbitrary SQL able to forge tenant context.
+[Recorded boundary and observed results](../evidence/index.html#qualification) · [الأدلة بالعربية](../ar/evidence/index.html#qualification) · [Redacted JSON](TECHNICAL_QUALIFICATION.json)
 
-
-## Final documentation and dependency review
-
-The final private application self-hosts its API documentation under CSP and includes a dependency inventory (SBOM). Automated reviews on the submitted tree reported no findings; this is not independent certification. An advisory in the ReDoc upstream build dependency tree remains under observation: no browser execution path was demonstrated, but incomplete source-map coverage prevents ruling it out. Keep ReDoc away from public exposure and resolve applicability before production use. Branch protection is not enforced on the private main branch. The public showcase is static and does not serve the private application or ReDoc.
-
-**بالعربية.** يقدّم التطبيق الخاص توثيق API محليًا تحت سياسة CSP وجردًا للاعتماديات. يبقى تنبيه في شجرة بناء ReDoc تحت المتابعة، ولم يُحسم مدى قابلية التأثر. لا يُعرّض ReDoc للعامة قبل حسمها. ولا تمثل المراجعات الآلية اعتمادًا أمنيًا مستقلًا؛ حماية فرع main غير مفروضة حاليًا. موقع العرض ثابت ولا يشغّل التطبيق الخاص أو ReDoc.
+[Download the records and run the offline verifier](decision-sample/README.md).

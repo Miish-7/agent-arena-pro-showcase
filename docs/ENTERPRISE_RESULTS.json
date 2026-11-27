@@ -1,0 +1,205 @@
+{
+  "as_of": "2026-11-25",
+  "edition": "AGENT//ARENA — AI Agent Security & Governance Platform",
+  "environment": "Working engineering release evaluated in an isolated enterprise test environment with synthetic records.",
+  "evidence": "Redacted, independently cross-checked results. Source, raw logs and operational credentials are held privately.",
+  "hosted_linux": {
+    "platform": "GitHub Actions on Linux amd64",
+    "python": {
+      "3.13.18": {
+        "general_passed": 928,
+        "dedicated_postgresql_cases": 37,
+        "warnings": 1
+      },
+      "3.12.16": {
+        "general_passed": 928,
+        "dedicated_postgresql_cases": 37,
+        "warnings": 1
+      }
+    },
+    "postgresql_17_12": {
+      "passed": 37,
+      "failed": 0,
+      "skipped": 0,
+      "missing": 0
+    },
+    "distinct_python_cases": 965,
+    "node_passed": 17,
+    "offline_cases": 9,
+    "model_calls": 0,
+    "offline_matrix": {
+      "TP": 5,
+      "FP": 1,
+      "FN": 0,
+      "TN": 3
+    },
+    "jobs": {
+      "passed": 5,
+      "total": 8,
+      "open_security_gates": [
+        "tooling static analysis",
+        "dependency advisories",
+        "container vulnerability gate"
+      ]
+    },
+    "image_scope": {
+      "linux_platform": "linux/amd64",
+      "same_identity_at_build_start_and_scan": true,
+      "safe_refusal": true,
+      "restart_verified": true,
+      "deployed_customer_image": false
+    },
+    "gates": "The hosted run passed five out of eight jobs. Tooling static analysis, dependency advisories and the container vulnerability gate remain open. Raw security inventories and review records are private.",
+    "tested_revision": "264cfe58133257b6ca2db633ca19aa0538d7b7c7"
+  },
+  "synthetic_pilot": {
+    "organizations": 2,
+    "ticket_service": "independent loopback TLS process",
+    "authorized_gets": 1,
+    "denial_reason": "scope_not_granted",
+    "pending_sensitive_change": true,
+    "reviewed_state": "CLOSED",
+    "ticket_revision_after_review": 1,
+    "other_tenant_http": 404,
+    "unavailable_service_http": 503,
+    "exported_audit_report_http": 200,
+    "integrity_confirmed_after_restore": true,
+    "denied_write_changed_revision": false,
+    "approval_replay_http": 409,
+    "post_approval_revision": 1,
+    "live_model_calls": 0,
+    "foreign_report_screening": "Four exports, event and verification surfaces were checked in both tenant directions.",
+    "reviewer_operation": "A separate authorized reviewer account was operated by the test."
+  },
+  "console_browser_review": {
+    "locales": [
+      "en",
+      "ar"
+    ],
+    "platforms": {
+      "Windows": {
+        "version": "Chrome 158.0.8127.37",
+        "assertionGroups": 16
+      },
+      "Linux": {
+        "version": "Google Chrome 158.0.8127.88",
+        "assertionGroups": 15
+      }
+    },
+    "observedExternalRequests": 0,
+    "scriptErrors": 0,
+    "scriptCspViolations": 0,
+    "public_overview_dataset": {
+      "recorded_runs": 4,
+      "completed_reads": 1,
+      "denied": 1,
+      "pending": 2,
+      "registered_agents": 1,
+      "registered_tools": 2
+    },
+    "localeScope": "The management console and the stable lab support the verified English/Arabic views. The optional, separate read-only SSO session page uses English controls."
+  },
+  "report_evidence": "For a pending or approved action, the organization-scoped PDF and JSON export include the approval reference and the action’s SHA-256 fingerprint. A separately computed fingerprint matched both exports and the recorded decision. Reviewer identity stays in authorized JSON and audit records. Four decision states were checked, and a different organization received HTTP 404.",
+  "report_field_sources": {
+    "policy_decision_reason_version_revision": [
+      "organization_scoped_pdf",
+      "organization_scoped_json",
+      "recorded_events"
+    ],
+    "approval_reference_and_action_fingerprint": [
+      "organization_scoped_pdf",
+      "organization_scoped_json",
+      "recorded_events"
+    ],
+    "reviewer_identity": [
+      "authorized_json",
+      "recorded_approval_evidence"
+    ]
+  },
+  "current_film": {
+    "seconds": 60.477,
+    "total_encoded_samples": 553,
+    "unaltered_original_console_samples": 551,
+    "original_console_seconds": 48.977,
+    "editorial_cards": 2,
+    "caption_cues_per_language": 12,
+    "external_model_calls": 0,
+    "capture_provenance": "The 60.477-second film has a bilingual introduction, 48.977 seconds of original authenticated console footage and closing credits. Its 551 application frames are identical to the prior recording. All 24 static application assets matched this build, and the two-organization workflow was exercised again on it. The four current console stills were captured separately on this build."
+  },
+  "live_model_evaluation": "This 25 November 2026 fixture used synthetic proposals without model inference. One earlier, separately authorized trial used one GitHub GET and one Groq completion for a public synthetic issue. It demonstrated connectivity.",
+  "history": {
+    "prior_integrated_candidate_distinct_python": 964,
+    "earlier_merged_lab_distinct_python": 761,
+    "earlier_merged_postgresql": 33,
+    "earlier_merged_node": 13
+  },
+  "counting": "The two Python interpreter jobs repeat the same 928 general cases. Count them once and add 37 distinct PostgreSQL cases. Node and the nine fixtures are reported separately.",
+  "availability": "Packaged results and recordings are accessible offline. Raw private records are not required for running the static site.",
+  "report_evidence_ar": "تطابق مرجع الموافقة وبصمة الإجراء SHA-256 بين PDF وJSON وسجل القرار في حالتي الانتظار والموافقة بعد مراجعة مستقلة. تُفحص هوية المراجع في JSON وسجل التدقيق المخوّلين.",
+  "subsequent_verification": {
+    "date": "2026-11-27",
+    "previous_fields_scope": "The original top-level dataset is the dated 25 November evaluation.",
+    "hosted": {
+      "revision": "686f29d",
+      "platform": "Linux",
+      "general_on_each_of_python_312_and_313": 967,
+      "postgresql_17_12": 37,
+      "postgres_skipped": 0,
+      "distinct_python": 1004,
+      "node": 24,
+      "passed_jobs_per_event": 4,
+      "jobs_per_event": 8,
+      "open": [
+        "tooling SAST",
+        "dependency advisories",
+        "secret scanner matches on two public file checksums",
+        "container vulnerabilities"
+      ],
+      "image_identity_verified_within_each_build": true,
+      "same_image_required_across_independent_builds": false,
+      "seccomp_filter_verified_before_and_after_restart": true,
+      "browser_evidence_scope": "The interactive Chrome confirmation was local, on this same revision.",
+      "new_scanner_matches_vs_previous_revision": false
+    },
+    "local": {
+      "revision": "686f29d",
+      "platform": "Windows",
+      "general_on_each_of_python_312_and_313": 967,
+      "postgresql_17_12": 37,
+      "postgres_skipped": 0,
+      "distinct_python": 1004,
+      "node": 24,
+      "hosted_on_this_revision": true,
+      "chrome": {
+        "locales": [
+          "en",
+          "ar"
+        ],
+        "delayed_selection_transitions_per_language": 10,
+        "journal_recovery": "outage, restored delivery, lost receipt acknowledgement, expired authority"
+      },
+      "offline_benchmark": {
+        "synthetic_cases": 9,
+        "provider_calls": 0,
+        "false_positives": 1
+      }
+    },
+    "previous_hosted": {
+      "revision": "42280e1",
+      "platform": "Linux",
+      "general_on_each_of_python_312_and_313": 966,
+      "postgresql_17_12": 37,
+      "postgres_skipped": 0,
+      "distinct_python": 1003,
+      "node": 20,
+      "passed_jobs_per_event": 4,
+      "jobs_per_event": 8,
+      "open": [
+        "tooling SAST",
+        "dependency advisories",
+        "secret scanner matches on two public file checksums",
+        "container vulnerabilities"
+      ]
+    }
+  }
+}

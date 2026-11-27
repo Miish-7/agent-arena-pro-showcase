@@ -31,3 +31,9 @@ An authorized connector trial on **21 November 2026** provided a different kind 
 ## بالعربية
 
 في مهمة التلخيص رُفض إغلاق `DEMO-102` وبقيت مفتوحة. وعندما أصبح الإغلاق نفسه هو المهمة المصرّح بها، احتاج التنفيذ إلى مراجع آخر. حتى توصية Blue بالسماح لم تُغنِ عن تلك الموافقة. الصور من محاكاة حتمية ببيانات اصطناعية، بعدد استدعاءات نموذج حي يساوي صفرًا. أمّا تجربة Groq فاقتصرت على تلخيص تذكرة عامة اصطناعية واحدة بإذن منفصل. [المعمارية](ARCHITECTURE.md) · [الصفحة العربية](../README_AR.md).
+
+## Isolated evaluation
+
+The later two-organization exercise recorded the authorized TLS read and the unchanged revision on denial. A different reviewer authorized one close. Reusing that approval returned HTTP 409 and the revision stayed at 1. The other organization received HTTP 404 for the protected record, and an unavailable connector returned HTTP 503. The public evidence includes the result of the local audit restore. [Executed enterprise case](LOCAL_PILOT.md) · [دراسة حالة المؤسستين](LOCAL_PILOT_AR.md)
+
+في تجربة النسخة المؤسسية انتقل رقم مراجعة التذكرة إلى 1 بعد الإغلاق المصرّح به. وعند تكرار الموافقة أعاد الخادم HTTP 409 وبقي الرقم 1. هذه المقارنة بين سجل القرار وحالة التذكرة توضّح أثر التفويض عمليًا.
